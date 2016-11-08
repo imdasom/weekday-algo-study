@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/day01_algo01/day01_algo01.iml" filepath="$PROJECT_DIR$/day01_algo01/day01_algo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_bj2229/day02_bj2229.iml" filepath="$PROJECT_DIR$/day02_bj2229/day02_bj2229.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_bj9507/day02_bj9507.iml" filepath="$PROJECT_DIR$/day02_bj9507/day02_bj9507.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_bj11047/day04_bj11047.iml" filepath="$PROJECT_DIR$/day04_bj11047/day04_bj11047.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_bj1476/day04_bj1476.iml" filepath="$PROJECT_DIR$/day04_bj1476/day04_bj1476.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day06_as_picnic/day06_as_picnic.iml" filepath="$PROJECT_DIR$/day06_as_picnic/day06_as_picnic.iml" />
+    </modules>
+  </component>
+</project>
