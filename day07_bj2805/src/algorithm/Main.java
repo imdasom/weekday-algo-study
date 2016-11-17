@@ -17,7 +17,9 @@ public class Main {
 
         Scanner sc = new Scanner(new FileInputStream("day07_bj2805\\data\\input_data.txt"));
         N = sc.nextInt();
+        if(N<1 || N>1000000) return;
         M = sc.nextInt();
+        if(M<1 || M>2000000000) return;
 
         trees = new int[N];
         left = 0;
@@ -36,25 +38,25 @@ public class Main {
     }
 
     public static int getCutterLength(){
-        int middle = -1;
+        int max = left;
         while(left <= right) {
 
-            middle = (left + right) / 2;
-
+            int middle = (left + right) / 2;
             int totalLen = 0;
-            for (int treeLen : trees) {
-                if(treeLen >= middle)
-                    totalLen += (treeLen - middle);
+
+            for (long treeLen : trees) {
+                totalLen += (treeLen >= middle ? (treeLen-middle) : 0);
             }
 
-            if(totalLen == M){
-                return middle;
-            }else if(totalLen > M){
+            if(totalLen > M){
+                max = middle;
                 left = middle + 1;
-            }else{
+            }else if(totalLen < M){
                 right = middle - 1;
+            }else{
+                return middle;
             }
         }
-        return middle;
+        return max;
     }
 }
